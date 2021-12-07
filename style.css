@@ -24,6 +24,16 @@ button,
 textarea {
   font-family: inherit;
 }
+.btn {
+  font-size: 1.7rem;
+  border: 0;
+  border-radius: 0.6rem;
+  outline: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 main {
   display: flex;
   justify-content: center;
@@ -35,22 +45,35 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 
+/*
+form section style
+*/
+#form-container {
+  width: 40%;
+}
+
+.form {
+  width: 60%;
+}
 .form-group {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 input {
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 1rem;
+  font-size: 1.7rem;
   border: 0;
   border-radius: 0.6rem;
   outline: 0;
   background-color: #ebebeb;
+  color: #352424;
+  width: 100%;
 }
 label {
   font-weight: 700;
@@ -61,11 +84,43 @@ label {
   margin: 0 auto;
   display: table;
   padding: 0.5rem 2rem;
-  font-size: 1.7rem;
-  font-weight: 700;
-  border: 0;
+  background-color: #00e676;
+}
+/*
+list section Style
+*/
+td,
+th {
+  padding: 0.5rem;
+  border: 1px solid #bdc3c7;
+}
+
+#list-container {
+  width: 60%;
+}
+
+.list_title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.list_table {
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 5rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.list_table-head {
+  background-color: #bdc3c7;
   border-radius: 0.6rem;
-  outline: 0;
-  background-color: #009688;
-  color: #fff;
+}
+
+.table-delet-btn {
+  padding: 0.3rem 0.5rem;
+  background-color: #ff1744;
+}
+.table-edit-btn {
+  padding: 0.3rem 0.5rem;
+  background-color: #03a9f4;
 }
