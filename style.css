@@ -33,6 +33,8 @@ textarea {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
 }
 main {
   display: flex;
@@ -46,11 +48,10 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  height: 100%;
 }
 
-/*
-form section style
-*/
+/***** form section style *****/
 #form-container {
   width: 40%;
 }
@@ -78,6 +79,7 @@ input {
 label {
   font-weight: 700;
   margin-bottom: 0.5rem;
+  font-size: 1.7rem;
 }
 
 .form-btn {
@@ -86,13 +88,20 @@ label {
   padding: 0.5rem 2rem;
   background-color: #00e676;
 }
-/*
-list section Style
-*/
-td,
-th {
+.form-btn:hover {
+  background-color: #00552c;
+}
+
+/***** list section Style *****/
+td {
   padding: 0.5rem;
-  border: 1px solid #bdc3c7;
+}
+th {
+  padding: 1rem;
+}
+
+td:first-child {
+  font-weight: 700;
 }
 
 #list-container {
@@ -106,21 +115,26 @@ th {
 .list_table {
   width: 100%;
   background-color: #ebebeb;
-  padding: 5rem;
   text-align: center;
   border-collapse: collapse;
 }
 
 .list_table-head {
-  background-color: #bdc3c7;
-  border-radius: 0.6rem;
+  background-color: #989c9e;
 }
 
-.table-delet-btn {
+.table-delete-btn {
   padding: 0.3rem 0.5rem;
   background-color: #ff1744;
+}
+.table-delete-btn:hover {
+  background-color: #7e031b;
 }
 .table-edit-btn {
   padding: 0.3rem 0.5rem;
   background-color: #03a9f4;
+}
+
+.table-edit-btn:hover {
+  background-color: #034766;
 }
